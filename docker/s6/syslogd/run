@@ -1,5 +1,5 @@
 #!/bin/sh
-
+echo 'syslogd'
 if test -f ./setup; then
     source ./setup
 fi

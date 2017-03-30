@@ -1,5 +1,5 @@
 #!/bin/sh
-
+echo 'ssh setup'
 # Check if host keys are present, else create them
 if ! test -f /data/ssh/ssh_host_rsa_key; then
     ssh-keygen -q -f /data/ssh/ssh_host_rsa_key -N '' -t rsa

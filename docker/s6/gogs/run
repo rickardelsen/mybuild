@@ -1,5 +1,5 @@
 #!/bin/sh
-
+echo 'gogs run'
 if test -f ./setup; then
     source ./setup
 fi

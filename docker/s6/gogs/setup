@@ -1,5 +1,5 @@
 #!/bin/sh
-
+echo 'gogs setup'
 if ! test -d ~git/.ssh; then
     mkdir -p ~git/.ssh
     chmod 700 ~git/.ssh

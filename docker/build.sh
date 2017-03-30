@@ -11,16 +11,16 @@ export GO15VENDOREXPERIMENT=1
 apk --no-cache --no-progress add --virtual build-deps build-base linux-pam-dev
 
 # Build Gogs
-#mkdir -p ${GOPATH}/src/github.com/gogits/
-#ln -s /app/gogs/build ${GOPATH}/src/github.com/gogits/gogs
-#cd ${GOPATH}/src/github.com/gogits/gogs
+mkdir -p ${GOPATH}/src/github.com/gogits/
+ln -s /app/gogs/build ${GOPATH}/src/github.com/gogits/gogs
+cd ${GOPATH}/src/github.com/gogits/gogs
 # Needed since git 2.9.3 or 2.9.4
 #git config --global http.https://gopkg.in.followRedirects true
 #go get -v -tags "sqlite cert pam" ./...
 #make build TAGS="sqlite cert pam"
 
 # Cleanup GOPATH
-#rm -r $GOPATH
+rm -r $GOPATH
 
 # Remove build deps
 apk --no-progress del build-deps
